@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+  color: #00a724;
+  font-family: 'Roboto', sans-serif;
+  padding: 5% 10%;
+}
+
+.main h1 {
+  font-size: 300%;
+}
+
+.main .list {
+  color: #00a724;
+  margin-top: 10px;
+}
+
+.main #converter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main #converter input, .main #converter select {
+  padding: 20px 10px;
+  font-size: 150%;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.main #converter input:focus, .main #converter select:focus {
+  border: 1px solid #00a724;
+}
+
+.main #converter input {
+  width: 40%;
+  color: #00a724;
+}
+
+.main #converter select:hover {
+  cursor: pointer;
+  border: 1px solid #00a724;
+}
+
+.main #converter div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.main #converter button {
+  font-size: 150%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #00a724;
+  color: #fff;
+  outline: none;
+}
+
+.main #converter button:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #00a724;
+  border: 1px solid #00a724;
+}
+
+.main .result {
+  font-size: 200%;
+}
+
+.main .footer-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #00a724;
+  width: 100%;
+  height: 90px;
+  -webkit-clip-path: polygon(0 0, 41% 17%, 77% 55%, 100% 100%, 0 100%, 0% 50%);
+          clip-path: polygon(0 0, 41% 17%, 77% 55%, 100% 100%, 0 100%, 0% 50%);
+  z-index: -100;
+}
+
+.main small {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  color: #fff;
+  z-index: 100;
+}
+
+.main small a {
+  color: #fff;
+}
+
+.main i.currency {
+  position: absolute;
+  color: #00a724;
+}
+
+.main i.fa-dollar-sign {
+  font-size: 75px;
+  top: 8%;
+  left: 10%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.main i.fa-euro-sign {
+  font-size: 50px;
+  top: 40%;
+  left: 1%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.main i.fa-yen-sign {
+  font-size: 60px;
+  bottom: 18%;
+  left: 25%;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.main i.fa-ruble-sign {
+  font-size: 50px;
+  top: 15%;
+  right: 10%;
+  -webkit-transform: rotate(-75deg);
+          transform: rotate(-75deg);
+}
+
+.main i.fa-pound-sign {
+  font-size: 45px;
+  bottom: 35%;
+  right: 6%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.main i.fa-won-sign {
+  font-size: 55px;
+  bottom: 13%;
+  right: 35%;
+  -webkit-transform: rotate(145deg);
+          transform: rotate(145deg);
+}
+
+.main i.fa-rupee-sign {
+  font-size: 30px;
+  bottom: 18%;
+  left: 3%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.main i.fa-shekel-sign {
+  font-size: 35px;
+  bottom: 5%;
+  right: 5%;
+}
+
+@media only screen and (max-width: 750px) {
+  .main h1 {
+    font-size: 250%;
+  }
+  .main #converter input, .main #converter select {
+    padding: 15px 10px;
+    font-size: 125%;
+  }
+  .main #converter button {
+    font-size: 125%;
+    padding: 5px;
+  }
+  .main i.fa-dollar-sign {
+    font-size: 65px;
+    left: 5%;
+  }
+  .main i.fa-euro-sign {
+    font-size: 40px;
+  }
+  .main i.fa-yen-sign {
+    font-size: 50px;
+  }
+  .main i.fa-ruble-sign {
+    font-size: 40px;
+  }
+  .main i.fa-pound-sign {
+    font-size: 35px;
+  }
+  .main i.fa-won-sign {
+    font-size: 45px;
+  }
+  .main i.fa-rupee-sign {
+    font-size: 20px;
+  }
+  .main i.fa-shekel-sign {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main h1 {
+    font-size: 225%;
+  }
+  .main #converter input, .main #converter select {
+    padding: 15px 5px;
+    font-size: 100%;
+  }
+  .main .result {
+    font-size: 150%;
+  }
+  .main i.fa-dollar-sign {
+    font-size: 55px;
+    left: 3%;
+    top: 13%;
+  }
+  .main i.fa-euro-sign {
+    font-size: 30px;
+  }
+  .main i.fa-yen-sign {
+    font-size: 40px;
+  }
+  .main i.fa-ruble-sign {
+    font-size: 30px;
+  }
+  .main i.fa-pound-sign {
+    font-size: 25px;
+  }
+  .main i.fa-won-sign {
+    font-size: 35px;
+  }
+  .main i.fa-rupee-sign {
+    font-size: 15px;
+  }
+  .main i.fa-shekel-sign {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .main h1 {
+    font-size: 200%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

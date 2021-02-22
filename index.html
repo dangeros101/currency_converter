@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link href="./style/style.css" rel="stylesheet">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <section class="main">
+        <i class="fas fa-ruble-sign currency"></i>
+        <i class="fas fa-yen-sign currency"></i>
+        <i class="fas fa-won-sign currency"></i>
+        <i class="fas fa-euro-sign currency"></i>
+        <i class="fas fa-dollar-sign currency"></i>
+        <i class="fas fa-pound-sign currency"></i>
+        <i class="fas fa-shekel-sign currency"></i>
+        <i class="fas fa-rupee-sign currency"></i>
+
+        <h1>Currency Converter</h1>
+
+        <a href="https://www.iban.com/currency-codes" class="list" target="__blank">List of currency codes</a>
+
+        <form id="converter">
+            <input id="amount" type="number" min="0" step="0.01" placeholder="Amount...">
+                
+            <div class="base-div">
+                <label for="base">From</label>
+                <select id="base">
+                    <!-- Create options through JS -->
+                </select>
+            </div>
+
+            <button type="button" id="exchange-button"><i class="fas fa-exchange-alt"></i></button>
+
+            <div class="target-div">
+                <label for="target">To</label>
+                <select id="target">
+                    <!-- Create options through JS -->
+                </select>
+            </div>
+
+            <button type="submit" id="submit-button"><i class="fas fa-arrow-right"></i></button>
+        </form>
+
+        <p class="result"></p>
+
+        <small>&copy;Copyright <a href="https://github.com/dangeros101" target="__blank">dangeros101</a> 2021</small>
+        <div class="footer-background"></div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
