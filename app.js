@@ -7,7 +7,7 @@ const exchangeBtn = document.getElementById('exchange-button');
 const submitBtn = document.getElementById('submit-button');
 const result = document.querySelector('.result');
 
-let GET_API = `https://api.exchangeratesapi.io/latest?base=USD`;
+let GET_API = `https://api.exchangerate.host/latest?base=USD`;
 
 fetch(GET_API)
 .then(response => response.json())
@@ -32,7 +32,7 @@ fetch(GET_API)
 submitBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
-    GET_API = `https://api.exchangeratesapi.io/latest?base=${base.value}`;
+    GET_API = `https://api.exchangerate.host/latest?base=${base.value}`;
     
     fetch(GET_API)
     .then(response => response.json())
